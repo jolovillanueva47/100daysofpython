@@ -1,6 +1,4 @@
-# 100daysofpython
-100 Days of Python 
-
+# 100 Days of Python
 Starting the Udemy Course by Angela Yu
 
 ### Day 1
