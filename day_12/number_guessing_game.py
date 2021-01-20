@@ -3,6 +3,9 @@ from replit import clear
 import random
 
 def compare_guess(answer,guess):
+    """
+    Checks answer to guess then returns a Boolean
+    """
     if answer == guess:
         return True
     elif guess > answer:
@@ -12,6 +15,9 @@ def compare_guess(answer,guess):
     return False
 
 def guess_number():
+    """
+    Guessing Game itself
+    """
     if input("Choose a difficulty. Type 'easy' or 'hard': ") == "easy":
         number_of_attempts=10
     else:
