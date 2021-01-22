@@ -67,7 +67,7 @@ def check_sufficiency(resources,choice):
 def process_coins(total_coins,choice,money):
     coffee_cost=MENU[choice]["cost"]
     if total_coins < coffee_cost:
-        print("Sorry that's not enough money. Money refunded.")
+        print("Sorry that's not enough money🪙. Money refunded.")
         return False
     else:
         if total_coins == coffee_cost:
@@ -95,6 +95,7 @@ while coffee_is_on:
     else:
         sufficient_resources=check_sufficiency(resources,choice)
         if sufficient_resources == True:
+            print("Please insert coins.")
             quarters_inserted=int(input("How many quarters?: "))*QUARTERS
             dimes_inserted=int(input("How many dimes?: "))*DIMES
             nickels_inserted=int(input("How many nickles?: "))*NICKLES
@@ -104,6 +105,6 @@ while coffee_is_on:
             if sufficient_coins == True:
                 money+=MENU[choice]["cost"]
                 deduct_resources(resources,choice)
-                print(f"Here is your {choice}. Enjoy!")
-                print(resources)
+                print(f"Here is your {choice} ☕. Enjoy!")
+
 
